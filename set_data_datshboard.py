@@ -11,8 +11,8 @@ import logging
 import mysql.connector
 class Auto_Domain_Source():
     def __init__(self):
-        self.LOCAL_USERNAME='roop'
-        self.LOCAL_PASSWORD='roop@12345'
+        self.LOCAL_USERNAME=''
+        self.LOCAL_PASSWORD=''
         self.LIVE_USERNAME=''
         self.LIVE_PASSWORD=''
         self.type='local'
@@ -21,10 +21,10 @@ class Auto_Domain_Source():
     def mql_connection(self):
         try:
             db = mysql.connector.connect(
-                host='10.5.50.221',
+                host='',
                 port=3306,
-                user='newsusr',
-                password='q-jXhjB-mA18USpD',
+                user='',
+                password='',
                 database='newsdashdb',
                 autocommit=True
             )
